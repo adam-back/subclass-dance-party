@@ -1,6 +1,7 @@
 TODO:
 
-Set limits so players cannot dance off screen. -A
+Set limits so players cannot dance off screen. -A DONE
+Ball centers regardless of window size. -A
 Ball centers on lineup. -A
 Add another link that puts into formation and limits number of players.
 Players line up in formation (with offensive line, etc).
