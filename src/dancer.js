@@ -47,6 +47,8 @@ var Dancer = function(top, left, timeBetweenSteps){
       if(Math.random() < .5) {
         plusOrMinus = -1;
       }
+      
+      //if statement deciding whether to set left boundary or right
 
       if(times < maxTimes) {
       context.march(Math.random() *100 * plusOrMinus, Math.random() *100 * plusOrMinus);
@@ -60,7 +62,7 @@ var Dancer = function(top, left, timeBetweenSteps){
     for(var i = 0; i < dancerArray.length; i++) {
       var oldTop = +dancerArray[i].css('top').slice(0,-2);
       var oldLeft = +dancerArray[i].css('left').slice(0,-2);
-      console.log(Math.min(oldLeft + left, 1400));
+      //if statement deciding whether to set left boundary or right
 
       dancerArray[i].animate({
         left: Math.min((oldLeft + left), $('body').width() -100),
