@@ -56,16 +56,15 @@ var Dancer = function(top, left, timeBetweenSteps){
   }
 
   Dancer.prototype.march = function(top,left) {
-
     var dancerArray = window.dancers;
     for(var i = 0; i < dancerArray.length; i++) {
       var oldTop = +dancerArray[i].css('top').slice(0,-2);
       var oldLeft = +dancerArray[i].css('left').slice(0,-2);
-
+      console.log(Math.min(oldLeft + left, 1400));
 
       dancerArray[i].animate({
-        left: oldLeft + left,
-        top: oldTop + top
+        left: Math.min((oldLeft + left), window.outerWidth),
+        top: Math.min((oldTop + top), window.outerHeight)
       }, 750);
     }
 
