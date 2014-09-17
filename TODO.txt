@@ -1,6 +1,7 @@
 TODO:
 
-Set limits so players cannot dance off screen. -A DONE
+Set limits so players cannot dance off screen. -A
+-still need left and top
 Ball centers regardless of window size. -A ish
 Ball centers on lineup. -A DONE
 -unless it is still moving
@@ -8,4 +9,3 @@ Change parameters of how far throw will go based off window size - A DONE
 Add another link that puts into formation and limits number of players.
 Players line up in formation (with offensive line, etc).
 One player follows toss.
-
