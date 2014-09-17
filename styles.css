@@ -43,7 +43,7 @@ body, a:link, a:visited, a:active{
   height: 100px;
   border: 0px solid;
   /*border-radius: 5px;*/
-  position: absolute;
+  position: inline-block;
 
 }
 

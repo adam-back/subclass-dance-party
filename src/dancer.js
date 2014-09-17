@@ -25,13 +25,13 @@ var Dancer = function(top, left, timeBetweenSteps){
   var dancerArray = window.dancers;
   for(var i = 0; i < dancerArray.length; i++) {
     if(dancerArray[i].hasClass("shyDancer")) {
-      dancerArray[i].css({left: 700 - Math.random() * 150});
+      dancerArray[i].css({left: (($('body').width() / 2) - 100) - Math.random() * 100});
       //49er
     } else if(dancerArray[i].hasClass("blinky")) {
-      dancerArray[i].css({left: 1000 + Math.random() * 150});
+      dancerArray[i].css({left: (($('body').width() / 2) + 100) + Math.random() * 100});
       //raider
     } else {
-      dancerArray[i].css({left: 800});
+      dancerArray[i].css({left: ($('body').width() / 2) });
       //ball
     }
   }
