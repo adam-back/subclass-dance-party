@@ -11,14 +11,14 @@ $(document).ready(function(){
   // });
 
   $(document).keydown(function(event) {
-    if(event.which === 32 && +$('.blueJumper').css('left').slice(0, -2) < 1400) {
+    if(event.which === 32 && +$('.blueJumper').css('left').slice(0, -2) < $('body').width() - 100) {
       console.log("hail mary");
       $('.blueJumper').animate({
         left: $('body').width() - 100
       }, 3000);
     }
 
-    if(event.which === 38 && +$('.blueJumper').css('left').slice(0, -2) < 1400) {
+    if(event.which === 38 && +$('.blueJumper').css('left').slice(0, -2) < $('body').width() - 100) {
       console.log('up');
       $('.blueJumper').animate({
         left: $('body').width() - 100,
@@ -26,7 +26,7 @@ $(document).ready(function(){
       }, 2000);
     }
 
-    if(event.which === 40 && +$('.blueJumper').css('left').slice(0, -2) < 1400) {
+    if(event.which === 40 && +$('.blueJumper').css('left').slice(0, -2) < $('body').width() - 100) {
       console.log('down');
       $('.blueJumper').animate({
         left: $('body').width() - 100,
