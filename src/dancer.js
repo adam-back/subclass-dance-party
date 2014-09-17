@@ -63,8 +63,8 @@ var Dancer = function(top, left, timeBetweenSteps){
       console.log(Math.min(oldLeft + left, 1400));
 
       dancerArray[i].animate({
-        left: Math.min((oldLeft + left), window.outerWidth),
-        top: Math.min((oldTop + top), window.outerHeight)
+        left: Math.min((oldLeft + left), $('body').width() -100),
+        top: Math.min((oldTop + top), $('body').height() -100)
       }, 750);
     }
 
