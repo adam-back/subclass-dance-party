@@ -13,8 +13,6 @@ $(document).ready(function(){
   $(document).keydown(function(event) {
     if(event.which === 32 && +$('.blueJumper').css('left').slice(0, -2) < 1400) {
       console.log("hail mary");
-      var distance = $('body').width() - 100;
-      console.log($('body').width());
       $('.blueJumper').animate({
         left: $('body').width() - 100
       }, 3000);
@@ -23,16 +21,16 @@ $(document).ready(function(){
     if(event.which === 38 && +$('.blueJumper').css('left').slice(0, -2) < 1400) {
       console.log('up');
       $('.blueJumper').animate({
-        left: "+=600",
-        top: "-=400"
+        left: $('body').width() - 100,
+        top: 50
       }, 2000);
     }
 
     if(event.which === 40 && +$('.blueJumper').css('left').slice(0, -2) < 1400) {
       console.log('down');
       $('.blueJumper').animate({
-        left: "+=600",
-        top: "+=300"
+        left: $('body').width() - 100,
+        top: $('body').height() - 100
       }, 2000);
     }
 
